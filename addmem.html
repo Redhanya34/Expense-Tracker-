@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <style>
+      pre {
+      text-align: center;
+       width: 1300px;
+      display: inline-block;}
+      .pass {
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+        width: 200px;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        text-align: center;
+        }      
+      </style>
+    {%extends 'navbar.html'%}
+    {% block content %}
+    
+    <form method = "POST" class="pass" action=""><pre>
+    Name : <input type="text" class="pass" name="Name">
+    Groupname : <input type="Gname" class="pass" name = "Groupname">
+    <input type="submit" value="add participant"></pre></form>
+    {%endblock%}
+</html>

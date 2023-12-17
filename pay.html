@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        pre {
+      text-align: center;
+       width: 1300px;
+      display: inline-block;}
+      .pass {
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+        width: 200px;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        text-align: center;
+        }      
+      </style>
+    {%extends 'navbar.html'%}
+    {% block content %}
+    <form method = "POST" class="pass" action=""><pre>
+
+    payment mode : <select name="option">
+        <option>Account</option>
+        <option>Debit</option>
+        <option>UPI</option>
+        <option>credit</option>
+    </select>
+    <input type="submit" value="pay"></pre></form>
+    {%endblock%}
+</html>

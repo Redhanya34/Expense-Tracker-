@@ -1,0 +1,107 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+ -->
+ 
+<meta charset="UTF-8" />
+    <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <style type="text/css">
+
+header h1 {
+          text-align: center;
+          font-size: 40px;
+          color: white;
+          }
+          header {
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            }
+            nav {
+              background-color: #333;
+              overflow: hidden;
+          }
+          nav a {
+              text-decoration: none;
+              padding: 5px;
+              text-align: center;
+              float: right;
+              color: white;
+          } 
+        
+        .sign {
+          margin-right: 10px;
+            padding-top: 40px;
+            color: rgb(17, 124, 143);
+            font-weight: bold;
+            font-size: 23px;
+        }
+        
+        .un {
+        width: 200px;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        top:600;
+        
+        }
+        
+        form.form1 {
+            padding-top: 10px;
+        }
+        
+        .pass {
+        width: 200px;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        text-align: center;
+        }
+        button {
+        width: 80px;
+        height: 45px;
+        border-radius: 12px;
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+        color: #bb35d3;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 8px;
+        cursor: pointer;
+        }
+         
+
+</style>
+</head>    
+<body> <center>   
+  <p class="sign" align="center">Login</p>
+  <form class="form1" method="POST">
+      <input name="username" id ="username" class="un" type="text" align="center" placeholder="Username" required><br>
+     
+      <input name="passwd" id = "passwd" class="pass" type="password" align="center" placeholder="Password" required><br>
+  <button class="btn btn-dark" type="submit">Sign in</button>
+</div>    
+       </center>     
+</body>     
+</html>

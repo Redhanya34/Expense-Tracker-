@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        pre {
+      text-align: center;
+       width: 1300px;
+      display: inline-block;}
+      .pass {
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+        width: 200px;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        text-align: center;
+        }      
+      </style>
+    {%extends 'navbar.html'%}
+    {% block content %}
+    <form method = "POST" action=""><pre>
+
+      card holders name : <input type="text" class="pass" name = 'name'>
+      pin code : <input type="text" class="pass" name = 'pincode'>
+      Amount : <input type="text" class="pass" name="Amount">
+      <input type="submit" value="Proceed"></pre>
+  </form>
+    {%endblock%}
+</html>

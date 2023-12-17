@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <style>
+       pre {
+      text-align: center;
+       width: 1300px;
+      display: inline-block;}
+      .pass {
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+        width: 200px;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        text-align: center;
+        }      
+      </style>
+      <script type="text/javascript">
+        function hai(){
+          output.value = "amount credited"
+        }
+      </script>
+    {%extends 'navbar.html'%}
+    {% block content %}
+    <form method = "POST" action=""><pre>
+      
+       Account_holder_Name : <input type="text" class="pass" name="Account_holder_Name">
+       Account_number : <input type="text" class="pass" name = "Account_number">
+       Reenter_Account_number : <input type="text" class="pass" name ="Reenter_Account_number">
+        IFSC : <input type="text" class="pass" name="IFSC">
+        Bank_Name : <input type="text" class="pass" name="Bank_Name">
+        <input type="submit" name="proceed" onclick="hai()"></pre>
+</form>
+{%endblock%}
+</html>

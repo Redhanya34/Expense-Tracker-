@@ -1,0 +1,35 @@
+<style>
+  pre {font-family: Georgia, 'Times New Roman', Times, serif ;
+      text-align: center;
+       width: 1000px;
+      display: inline-block;}
+      table {
+        width: 200px;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        text-align: center;
+        }      
+</style>
+<table border = 1>
+    <tr><th> Member Names</th><th>Group Name</th><th>Amount</th><th>Spent On</th><th>Date</th><th>Shared Expense</th></tr>
+    {% for user in userDetails %}
+    <tr>
+      <td> {{user.0}}  </td>
+      <td> {{members.0.0}}</td>
+      <td> {{members.0.1}}</td>   
+      <td> {{members.0.2}} </td>
+      <td> {{members.0.3}}</td>
+      <td> {{(members.0.1)/l}}</td>
+    </tr>
+    {% endfor %}
+  </table>
